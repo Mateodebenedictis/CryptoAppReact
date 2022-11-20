@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="container-fluid ">
       <div style={styles.row}>
-        <img src={logoMateoDev}  style={styles.logo}/>
+        <img src={logoMateoDev}  style={styles.logo} alt=""/>
         <h4 className="text-center mb-3 mt-3">Mathew Crypto App</h4>
       </div>
 

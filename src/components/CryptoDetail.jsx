@@ -28,6 +28,7 @@ const CryptoDetail = () => {
 
     useEffect(() => {
         showData();
+
     }, []);
 
     const formatter = new Intl.NumberFormat('en-US', {
@@ -72,7 +73,7 @@ const CryptoDetail = () => {
                             { componenteBoton('p-2 order-2', '#000', '25%', `Market Cap: ${formatter.format(crypto.market_data.market_cap.usd)}` ) }
                             <div className="p-2 order-3" style={{alignItems: 'center', display: 'flex', flexDirection: 'row'}}>
                                 <div style={{borderRadius: '5px', background: '#000', opacity: '25%', padding: '2px 5px'}}> 
-                                    <a href={crypto?.links?.homepage[0] } style={{textDecoration: 'none', color: 'white'}}target="_blank" >{crypto.name} Homepage</a>
+                                    <a href={crypto?.links?.homepage[0] } style={{textDecoration: 'none', color: 'white'}} target="_blank" rel="noreferrer">{crypto.name} Homepage</a>
                                 </div>
                             </div>
                         </div>
